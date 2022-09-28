@@ -1,0 +1,162 @@
+@font-face{
+	font-family: bebasNeue;
+	src: url(../fonts/Bebas-Regular-webfont.woff) format(woff);
+}
+
+body{
+	font: 16px/32px bebasNeue, arial sans-serif;
+	padding: 20px;
+	background-color:#666;
+}
+
+h1{
+	font: 80px bebesNeue;
+	text-align: center;
+	text-shadow:0 4px 7px  white;
+	padding-bottom: 50px;
+	color: #333;
+	
+}
+.container{
+	width: 600px;
+	background-color: #444;
+	margin: auto;
+	padding: 10px;
+	border-radius: 7px;
+	
+}
+.container:hover{
+	box-shadow:  0px 0px 10px white;
+}
+
+.galery img,.galery span,.bingkai{
+	border-radius: 50%;
+}
+.galery li{
+	float: left;
+	margin: 15px;
+}
+.galery img{
+	width: 120px;
+	height: 120px;
+	background-image:url(../img/thumbs/thum1.png);
+	position: absolute;
+
+}
+.galery span{
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	text-align: center;
+	line-height: 120px;
+	color: white;
+	transition: .3s;
+	opacity: 0;
+	/* background-color: rgba(150, 150, 150, .4); */
+	transform: scale(.3);
+}
+.bingkai{
+	width: 120px;
+	height: 120px;
+	position:relative;
+	border: 5px solid #222;
+	box-sizing: border-box;
+}
+ a:hover span{
+	box-shadow:  0px 0px 10px white;
+	opacity: 1;
+	transform: scale(1);
+}
+
+/* overelay */
+
+.overlay{
+	opacity: 0;
+	background-color: rgba(0, 0, 0, .4);
+	overflow: hidden;
+	
+	position: absolute;
+}
+.gambar{
+	width: 410px;
+	height: 500px;
+	text-align: center;
+	margin: auto;
+	padding: 100px;
+}
+.overlay:target{
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 1;
+	
+	/* width: auto;
+	height: auto;
+*/
+}
+.overlay:target img{
+	animation: zoomFade .6s;
+}
+.overlay img{
+	max-height: 100%;
+	border: 5px solid white;
+	
+}
+.overlay:target a{
+	animation: closeTurun .6s .3s forwards;
+	background-color:#222;
+	padding: 5px;
+	font: 11px arial;
+	box-shadow:0 0 2px white;
+	position: relative;
+	color: white;
+	text-decoration: none;
+	opacity: 0;
+}
+.overlay .close .tutup:hover{
+background-color:rgb(187, 48, 48) ;
+color: white;
+transition: .3s;
+}
+
+
+.gambar .close .next,.gambar .close .prev{
+	background-color: #222;
+	text-transform: uppercase;
+	font-size: 11px;
+	color: white;
+}
+.gambar .close .next:hover,.gambar .close .prev:hover{
+	background-color: #444;
+
+}
+
+/* animasion */
+@keyframes zoomFade{
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	100%{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+@keyframes closeTurun{
+	0%{
+		top: -40px;
+	}
+	100%{
+		top: -20px;
+		opacity: 1;
+	}
+}
+
+
+
+
+
+.clear{
+	clear: both;
+}

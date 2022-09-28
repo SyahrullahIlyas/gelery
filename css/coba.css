@@ -1,0 +1,20 @@
+body{
+    background-color: aquamarine;
+    
+}
+div{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+}
+.satu{
+    background-image: url(../img/thumbs/thum1.png);
+}
+.dua:hover{
+    background-color: rgba(200, 200, 200, .4);
+    box-shadow: 0px 0px 30px 4px white;
+}
+.tiga{
+    border: 5px solid black;
+    box-sizing: border-box;
+}

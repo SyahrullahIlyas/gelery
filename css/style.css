@@ -1,0 +1,91 @@
+/* FONT */
+
+
+@font-face{
+	font-family: bebasNeue;
+	src: url(../fonts/Bebas-Regular-webfont.woff);
+}
+
+body{
+	font: 16px bebasNeue, arial sans-serif;
+	background-color: #eaeaea;
+}
+h1{
+	font-size: 80px;
+	text-align: center;
+	text-shadow:5px 5px 5px grey;
+	margin: 20px;
+}
+.container{
+	width: 600px;
+	background-color: #333;
+	margin: auto;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow:5px 5px 5px grey ;
+
+}
+.galery li{
+	position: relative;
+	width: 120px;
+	height: 120px;
+	border: 5px solid white;
+	border-radius: 50%;
+}
+/* .galery li .thumbs1{
+	border-radius: 50%;
+}
+/* .galery li span{ */
+	/* display:block;
+	width: 120px;
+	height: 120px;
+	background-color: rgba(200, 200, 200, .5);
+	border-radius: 50%;
+	float: left;
+	position: absolute;
+	top: 0;
+	text-align: center;
+	line-height: 120px;
+	opacity: 0;
+	transform: scale(.1);
+	transition: .3s;
+}
+.galery li a:hover span{
+	opacity: 1;
+	transform: scale(1);
+	color: #333;
+}
+
+
+.overlay{
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	position: fixed;
+	background-color: rgba(0, 0, 0, .0);
+	z-index: 9999;
+	text-align: center;
+	padding-top: 100px;
+}
+.overlay:target{
+	width: auto;
+	height: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .7);
+}
+.next.prev{
+	width: 50px;
+	height: 78px;
+} */
+
+
+
+
+/* 
+.clear{
+	clear: both;
+
+} */
